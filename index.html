@@ -260,34 +260,50 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
+    padding: 16px;
     background: linear-gradient(155deg, #F4E9CE 0%, #EAD8AF 55%, #E2C687 100%);
+    z-index: 1;
   }
   .prize .label{
     font-family: 'Caveat', cursive;
     font-weight: 700;
     font-size: 20px;
     color: var(--olive-deep);
-    opacity: 0.8;
+    opacity: 0.85;
     transform: rotate(-1.5deg);
   }
   .prize .code{
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
     letter-spacing: 0.05em;
     color: var(--olive-deep);
-    background: rgba(255,255,255,0.55);
+    background: rgba(255,255,255,0.65);
     border: 2px dashed var(--olive);
-    padding: 10px 18px;
+    padding: 8px 16px;
     border-radius: 12px;
     transform: rotate(1deg);
+    user-select: all;
+  }
+  .prize .link-btn{
+    display: inline-block;
+    margin-top: 4px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--olive-deep);
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+  }
+  .prize .link-btn:hover{
+    opacity: 0.75;
   }
   .prize .sub{
     font-family: 'Caveat', cursive;
-    font-size: 18px;
+    font-size: 17px;
     color: var(--olive-deep);
-    opacity: 0.75;
+    opacity: 0.8;
   }
 
   canvas#scratchCanvas{
@@ -298,6 +314,7 @@
     touch-action: none;
     cursor: grab;
     border-radius: 16px;
+    z-index: 2;
   }
   canvas#scratchCanvas:active{ cursor: grabbing; }
 
@@ -395,10 +412,10 @@
       <span class="line two">Birthday</span>
     </h1>
     <p class="lede">
-      To Iva,  Happy Birthday.... I guess? I hope you have a great day... I mean you already know me (the goat) so life can't really get much better (peak life). 
+      To Iva, Happy Birthday.... I guess? I hope you have a great day... I mean you already know me (the goat) so life can't really get much better (peak life). 
       Anyway, your kinda cool... I guess, even though ive known you like 2 days it feels like youve been here for 2 decades. Well done on getting into Imperial - We both know you could have done it without me ;). 
       Whalst im here, can we take a minute to hate on waterstones... They wouldnt let me add 16.67 onto this giftcard so plz can you send me ur bank deets so i can give you the second half of you present (Reinbusement for our date).
-      But yeah enough yap from me... Dont spend all of this at once, youve got enough books for now... Remeber you've still got a year of studying left (LOL... Sucks to be u?). But yeah, its been nice being your friend.... Ur kinda cool and smart and funny and whimisical.. sometimes (Double emphasis on sometimes (Sorry idk how to make HTML BOLD))
+      But yeah enough yap from me... Dont spend all of this at once, youve got enough books for now... Remeber you've still got a year of studying left (LOL... Sucks to be u?). But yeah, its been nice being your friend.... Ur kinda cool and smart and funny and whimisical.. sometimes (Double emphasis on sometimes)
     </p>
     <br>
     <span class="signature">— with love, always, from your better looking, smarter, funnier general stud of a HB</span>
@@ -415,11 +432,8 @@
   </div>
 
   <section class="gift-section">
-    
-
     <div class="card-stage">
       <svg class="arrow-doodle" viewBox="0 0 90 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        
         <path d="M8 4 C 30 4, 55 20, 60 46" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 7"/>
         <path d="M50 40 L 60 46 L 56 34" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -435,7 +449,7 @@
           <div class="prize">
             <span class="label">gift card code</span>
             <span class="code">D9Y8BFWMFTWZ</span>
-            <span class="sub"><a href="https://www.waterstones.com/egifts/landing/id/eyJpdiI6ImVaMDI0UmRsK0dOSTJFRVBlN21Ta0E9PSIsInZhbHVlIjoiMEhjMkxQME16RXpsMmFnSVRTS04rdz09IiwibWFjIjoiY2FjMjg4YTQ5ZGE1ZTQwNmVmZTU1OTFiNWNkY2RmMzFkNjQ3YzYxOWYxYTE0MjVmYTgxMGFkZjU4MmYzNGQ2ZiIsInRhZyI6IiJ9/token/%242y%2410%24dajAmWsF.ITFEqwQ34qOTOAZsnPULu8B0%2FJSItH%2F0CknnkxyrO12q" Click her i think </a></span>
+            <a href="https://www.waterstones.com/egifts/landing/id/eyJpdiI6ImVaMDI0UmRsK0dOSTJFRVBlN21Ta0E9PSIsInZhbHVlIjoiMEhjMkxQME16RXpsMmFnSVRTS04rdz09IiwibWFjIjoiY2FjMjg4YTQ5ZGE1ZTQwNmVmZTU1OTFiNWNkY2RmMzFkNjQ3YzYxOWYxYTE0MjVmYTgxMGFkZjU4MmYzNGQ2ZiIsInRhZyI6IiJ9/token/%242y%2410%24dajAmWsF.ITFEqwQ34qOTOAZsnPULu8B0%2FJSItH%2F0CknnkxyrO12q" target="_blank" rel="noopener noreferrer" class="link-btn">Click here to redeem ✦</a>
             <span class="sub">enjoy — you deserve it ✦</span>
           </div>
           <canvas id="scratchCanvas"></canvas>
@@ -610,8 +624,12 @@
   canvas.addEventListener('touchend', endScratch);
 
   window.addEventListener('resize', sizeCanvas);
-  window.addEventListener('load', sizeCanvas);
-  sizeCanvas();
+  
+  if (document.readyState === 'complete') {
+    sizeCanvas();
+  } else {
+    window.addEventListener('load', sizeCanvas);
+  }
 
   document.getElementById('resetBtn').addEventListener('click', () => {
     cleared = false;
